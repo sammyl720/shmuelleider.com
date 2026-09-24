@@ -1,36 +1,23 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { getAllPosts } from "@/lib/content";
 
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "Notes on building software.",
+  title: "Notes",
+  description: "Notes from Shmuel Leider on building software and learning in public.",
+  alternates: { canonical: "/blog" },
 };
 
-export default function BlogIndexPage() {
-  const posts = getAllPosts();
-
+export default function NotesPage() {
   return (
-    <div className="flex flex-col gap-6">
-      <h1 className="text-2xl font-semibold tracking-tight">Blog</h1>
-
-      {posts.length === 0 ? (
-        <p className="text-zinc-700 dark:text-zinc-300">
-          No posts yet.
-        </p>
-      ) : (
-        <ul className="flex flex-col gap-4">
-          {posts.map((p) => (
-            <li key={p.slug} className="rounded-2xl border border-zinc-200 p-5 dark:border-zinc-800">
-              <Link href={`/blog/${p.slug}`} className="font-medium hover:underline underline-offset-4">
-                {p.frontmatter.title}
-              </Link>
-              <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-300">{p.frontmatter.summary}</p>
-              <p className="mt-3 text-xs text-zinc-500">{new Date(p.frontmatter.date).toLocaleDateString()}</p>
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
+    <section className="notes-empty">
+      <p className="mono-label">Notes / Field journal</p>
+      <h1>The source code is the working record.</h1>
+      <p>
+        Longer notes are still taking shape. In the meantime, the repositories show the questions,
+        tradeoffs, and iterations more honestly than a polished post could.
+      </p>
+      <a className="button button-primary" href="https://github.com/sammyl720" target="_blank" rel="noreferrer">
+        Read the work on GitHub ↗
+      </a>
+    </section>
   );
 }
