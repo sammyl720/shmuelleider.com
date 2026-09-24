@@ -9,6 +9,8 @@
   --signal: #2455ff;
   --signal-dark: #173dcc;
   --acid: #d8ff4f;
+  --font-geist-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-geist-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
 }
 
 @theme inline {
