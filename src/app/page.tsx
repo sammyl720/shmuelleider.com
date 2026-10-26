@@ -95,8 +95,8 @@ export default function Home() {
       <section className="contact-band" aria-labelledby="contact-title">
         <p className="mono-label">Start a conversation</p>
         <h2 id="contact-title">Have a useful problem worth solving?</h2>
-        <a className="contact-link" href="mailto:hello@shmuelleider.com">
-          hello@shmuelleider.com <span aria-hidden="true">↗</span>
+        <a className="contact-link" href="mailto:sam.leider@hotmail.com">
+          sam.leider@hotmail.com <span aria-hidden="true">↗</span>
         </a>
       </section>
     </>

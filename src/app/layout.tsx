@@ -50,7 +50,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
                   {item.label}
                 </Link>
               ))}
-              <a href="mailto:hello@shmuelleider.com">Contact</a>
+              <a href="mailto:sam.leider@hotmail.com">Contact</a>
             </nav>
           </header>
 
@@ -59,7 +59,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           <footer className="site-footer">
             <p>Shmuel Leider <span>·</span> Brooklyn, NY</p>
             <div>
-              <a href="mailto:hello@shmuelleider.com">Email</a>
+              <a href="mailto:sam.leider@hotmail.com">Email</a>
               <a href="https://github.com/sammyl720" target="_blank" rel="noreferrer">
                 GitHub ↗
               </a>
